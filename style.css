@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.box {
+  background-color: crimson;
+  width: 550px;
+  height: 250px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+input {
+  padding: 15px 10px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+h2 {
+  color: #fff;
+  text-transform: capitalize;
+}
+.form {
+  width: 60%;
+  margin: 20px auto;
+}
+.firstPassword {
+  display: flex;
+  gap: 10px;
+}
+.firstPassword .first {
+  width: 80%;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+}
+.firstPassword .firstBtn {
+  padding: 7px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.secondPassword {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.form .secondPassword .second {
+  margin-top: 5px;
+  background-color: #fff;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 20px;
+  width: 100%;
+}
+.secondBtn {
+  position: absolute;
+  /* top: 34%; */
+  top: 24.5px;
+  transform: translateY(-50%);
+  right: 2px;
+  padding: 8px 20px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  background-color: blue;
+  cursor: pointer;
+  color: #fff;
+}
+.endText {
+  text-align: center;
+  margin-top: 10px;
+  text-transform: capitalize;
+  display: none;
+}
+.end {
+  text-transform: capitalize;
+  margin-top: 15px;
+}
+
+@media (max-width: 600px) {
+  .box {
+    width: 490px;
+  }
+}
+@media (max-width: 500px) {
+  .box {
+    width: 450px;
+  }
+}
+@media (max-width: 470px) {
+  .box {
+    width: 390px;
+  }
+}
+@media (max-width: 400px) {
+  .box {
+    width: 350px;
+  }
+}
+@media (max-width: 370px) {
+  .box {
+    width: 300px;
+  }
+  .form {
+    width: 80%;
+  }
+}
